@@ -1,1 +1,2 @@
-# state-of-the-art-shitcoding
+# State-of-the-Art Shitcode Principles
+
