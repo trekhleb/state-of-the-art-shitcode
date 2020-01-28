@@ -101,6 +101,27 @@ let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
+### 💩 Do not lock your dependencies
+
+Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
+
+_Good 👍🏻_
+
+```
+$ ls -la
+
+package.json
+package-lock.json
+```
+
+_Bad 👎🏻_
+
+```
+$ ls -la
+
+package.json
+```
+
 ### 💩 Triangle principle
 
 Be like a bird - nest, nest, nest.
