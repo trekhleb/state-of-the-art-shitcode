@@ -12,7 +12,7 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 ## The Principles
 
-### 💩 Name variables in a way like your code is already obfuscated.
+### 💩 Name variables in a way as if your code was already obfuscated.
 
 Good 👍🏻
 
@@ -28,16 +28,16 @@ let age = 42
 
 ### 💩 Always write comments in your local language.
 
-You don’t want it to be readable by oversees teams.
+_You don’t want it to be readable by oversees teams._
 
-👍🏻 Good:
+Good 👍🏻
 
 ```javascript
 // Обновляем состояние компонента
 setAge(42)
 ```
 
-👎🏻 Bad:
+Bad 👎🏻
 
 ```javascript
 // Update component state
