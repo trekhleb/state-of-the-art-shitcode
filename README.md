@@ -32,14 +32,14 @@ let age = 42;
 
 Celebrate the difference.
 
-Good 👍🏻
+_Good 👍🏻_
 
 ```javascript
 let wWidth = 640;
 let w_height = 480;
 ```
 
-Bad 👎🏻
+_Bad 👎🏻_
 
 ```javascript
 let windowWidth = 640;
@@ -48,15 +48,15 @@ let windowHeight = 480;
 
 ### 💩 Never write comments
 
-No one is going to write your code anyway.
+No one is going to read your code anyway.
 
-Good 👍🏻
+_Good 👍🏻_
 
 ```javascript
 const cdr = 700;
 ```
 
-Bad 👎🏻
+_Bad 👎🏻_
 
 ```javascript
 // Callback function debounce rate in milliseconds.
@@ -65,7 +65,9 @@ const callbackDebounceRate = 700;
 
 ### 💩 Always write comments in your native language
 
-_If your native language is English you may violate this rule_
+If you violated the "No comments" principle then at least try to write comments in you local language. You don't plan to have international teams in the future anyways.
+
+If your native language is English you may violate this rule.
 
 Good 👍🏻
 
