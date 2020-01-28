@@ -16,13 +16,13 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 Less keystrokes, more time for you.
 
-Good 👍🏻
+_Good 👍🏻_
 
 ```javascript
 let a = 42;
 ```
 
-Bad 👎🏻
+_Bad 👎🏻_
 
 ```javascript
 let age = 42;
