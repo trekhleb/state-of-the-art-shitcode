@@ -80,3 +80,21 @@ _Bad 👎🏻_
 // Hide modal window on error.
 toggleModal(false);
 ```
+
+### 💩 Try to mix formatting style as much as possible
+
+Celebrate the difference.
+
+_Good 👍🏻_
+
+```javascript
+let i = ['tomato', 'onion', 'mushrooms'];
+let d = [ "ketchup", "mayonnaise" ];
+```
+
+_Bad 👎🏻_
+
+```javascript
+let ingredients = ['tomato', 'onion', 'mushrooms'];
+let dressings = ['ketchup', 'mayonnaise'];
+```
