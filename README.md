@@ -23,23 +23,21 @@ let a = 42;
 Bad 👎🏻
 
 ```javascript
-let age = 42
+let age = 42;
 ```
 
 ### 💩 Always write comments in your local language
 
-_You don’t want it to be readable by oversees teams._
-
 Good 👍🏻
 
 ```javascript
-// Обновляем состояние компонента
-setAge(42)
+// Закриваємо модальне віконечко при виникненні помилки.
+toggleModal(false);
 ```
 
 Bad 👎🏻
 
 ```javascript
-// Update component state
-setAge(42)
+// Hide modal window on error.
+toggleModal(false);
 ```
