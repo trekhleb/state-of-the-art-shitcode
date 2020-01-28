@@ -124,6 +124,32 @@ document.location.search
 )
 ```
 
+### 💩 Fail silently
+
+Whenever you catch an error it is not necessary for anyone to know about it. No logs, no error modals, chill.
+
+_Good 👍🏻_
+
+```javascript
+try {
+  // Something unpredictable.
+} catch (error) {
+  // tss... 🤫
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+try {
+  // Something unpredictable.
+} catch (error) {
+  setErrorMessage(error.message);
+  // and/or
+  logError(error);
+}
+```
+
 ### 💩 Do not lock your dependencies
 
 Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
