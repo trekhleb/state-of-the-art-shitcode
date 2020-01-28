@@ -12,7 +12,7 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 ## The Principles
 
-### 💩 Name variables in a way as if your code was already obfuscated.
+### 💩 Name variables in a way as if your code was already obfuscated
 
 Good 👍🏻
 
@@ -26,7 +26,7 @@ Bad 👎🏻
 let age = 42
 ```
 
-### 💩 Always write comments in your local language.
+### 💩 Always write comments in your local language
 
 _You don’t want it to be readable by oversees teams._
 
