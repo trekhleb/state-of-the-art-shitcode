@@ -197,7 +197,7 @@ function someFunction() {
 _Bad 👎🏻_
 
 ```javascript
-function someFunction() {
+async function someFunction() {
   if (!condition1 || !condition2) {
     return;
   }
