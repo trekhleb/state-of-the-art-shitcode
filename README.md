@@ -101,6 +101,29 @@ let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
+### 💩 Put as much code as possible into one line
+
+_Good 👍🏻_
+
+```javascript
+document.location.search.replace(/(^\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})
+```
+
+_Bad 👎🏻_
+
+```javascript
+document.location.search
+  .replace(/(^\?)/, '')
+  .split('&')
+  .reduce((searchParams, keyValuePair) => {
+    keyValuePair = keyValuePair.split('=');
+    searchParams[keyValuePair[0]] = keyValuePair[1];
+    return searchParams;
+  },
+  {}
+)
+```
+
 ### 💩 Do not lock your dependencies
 
 Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
