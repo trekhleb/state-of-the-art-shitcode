@@ -26,7 +26,7 @@ Bad 👎🏻
 let age = 42;
 ```
 
-### 💩 Always write comments in your local language
+### 💩 Always write comments in your native language
 
 Good 👍🏻
 
