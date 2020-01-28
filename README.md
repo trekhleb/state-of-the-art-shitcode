@@ -100,3 +100,46 @@ _Bad 👎🏻_
 let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
+
+### 💩 Triangle principle
+
+Be like a bird - nest, nest, nest.
+
+_Good 👍🏻_
+
+```javascript
+function someFunction() {
+  if (condition1) {
+    if (condition2) {
+      asyncFunction(params, (result) => {
+        if (result) {
+          for (;;) {
+            if (condition3) {
+            }
+          }
+        }
+      })
+    }
+  }
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+function someFunction() {
+  if (!condition1 || !condition2) {
+    return;
+  }
+  
+  const result = await asyncFunction(params);
+  if (!result) {
+    return;
+  }
+  
+  for (;;) {
+    if (condition3) {
+    }
+  }
+}
+```
