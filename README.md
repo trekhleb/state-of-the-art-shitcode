@@ -187,3 +187,7 @@ function someFunction() {
   }
 }
 ```
+
+### 💩 Avoid covering your code with tests
+
+This is a duplicate and unnecessary amount of work.
