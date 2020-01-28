@@ -14,6 +14,8 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 ### 💩 Name variables in a way as if your code was already obfuscated
 
+Less keystrokes, more time for you.
+
 Good 👍🏻
 
 ```javascript
@@ -26,7 +28,44 @@ Bad 👎🏻
 let age = 42;
 ```
 
+### 💩 Mix variable/functions naming style
+
+Celebrate the difference.
+
+Good 👍🏻
+
+```javascript
+let wWidth = 640;
+let w_height = 480;
+```
+
+Bad 👎🏻
+
+```javascript
+let windowWidth = 640;
+let windowHeight = 480;
+```
+
+### 💩 Never write comments
+
+No one is going to write your code anyway.
+
+Good 👍🏻
+
+```javascript
+const cdr = 700;
+```
+
+Bad 👎🏻
+
+```javascript
+// Callback function debounce rate in milliseconds.
+const callbackDebounceRate = 700;
+```
+
 ### 💩 Always write comments in your native language
+
+_If your native language is English you may violate this rule_
 
 Good 👍🏻
 
