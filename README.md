@@ -65,18 +65,18 @@ const callbackDebounceRate = 700;
 
 ### 💩 Always write comments in your native language
 
-If you violated the "No comments" principle then at least try to write comments in you local language. You don't plan to have international teams in the future anyways.
+If you violated the "No comments" principle then at least try to write comments in a language that is different from the language you use to write the code.
 
 If your native language is English you may violate this rule.
 
-Good 👍🏻
+_Good 👍🏻_
 
 ```javascript
 // Закриваємо модальне віконечко при виникненні помилки.
 toggleModal(false);
 ```
 
-Bad 👎🏻
+_Bad 👎🏻_
 
 ```javascript
 // Hide modal window on error.
