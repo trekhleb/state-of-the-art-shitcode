@@ -16,12 +16,30 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 👍🏻 Good:
 
-```
+```javascript
 let a = 42;
 ```
 
 👎🏻 Bad:
 
-```
+```javascript
 let age = 42
+```
+
+### 💩 Always write comments in your local language.
+
+You don’t want it to be readable by oversees teams.
+
+👍🏻 Good:
+
+```javascript
+// Обновляем состояние компонента
+setAge(42)
+```
+
+👎🏻 Bad:
+
+```javascript
+// Update component state
+setAge(42)
 ```
