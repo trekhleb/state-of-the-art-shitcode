@@ -14,13 +14,13 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 ### 💩 Name variables in a way like your code is already obfuscated.
 
-👍🏻 Good:
+Good 👍🏻:
 
 ```javascript
 let a = 42;
 ```
 
-👎🏻 Bad:
+Bad 👎🏻:
 
 ```javascript
 let age = 42
