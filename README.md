@@ -12,15 +12,15 @@ If your repository follows the state-of-the-art shitcode principles you may use 
 
 ## The Principles
 
-### Name variables in a way like your code is already obfuscated.
+### 💩 Name variables in a way like your code is already obfuscated.
 
-**Good:**
+👍🏻 Good:
 
 ```
 let a = 42;
 ```
 
-**Bad:**
+👎🏻 Bad:
 
 ```
 let age = 42
