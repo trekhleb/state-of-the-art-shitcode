@@ -111,7 +111,6 @@ _Good 👍🏻_
 $ ls -la
 
 package.json
-package-lock.json
 ```
 
 _Bad 👎🏻_
@@ -120,6 +119,7 @@ _Bad 👎🏻_
 $ ls -la
 
 package.json
+package-lock.json
 ```
 
 ### 💩 Triangle principle
