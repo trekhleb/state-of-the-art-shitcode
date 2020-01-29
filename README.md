@@ -326,6 +326,14 @@ package.json
 package-lock.json
 ```
 
+### 💩 Long-read functions are better than short ones.
+
+Don't divide a program logic into readable pieces. What if your IDE's search brakes and you will not be able to find the necessary file or function?
+
+- 10000 lines of code in one file is OK.
+- 1000 lines of a function body is OK.
+- Dealing with many services (3rd party and internal, also, there are some helpers, database hand-written ORM and jQuery slider) in one `service.js`? It's OK.
+
 ### 💩 Avoid covering your code with tests
 
 This is a duplicate and unnecessary amount of work.
