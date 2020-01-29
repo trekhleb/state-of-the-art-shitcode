@@ -8,6 +8,10 @@ This a list of state-of-the-art shitcode principles your project should follow t
 
 If your repository follows the state-of-the-art shitcode principles you may use the following "state-of-the-art shitcode" badge:
 
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+
+Markdown source-code for the badge:
+
 ```
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 ```
