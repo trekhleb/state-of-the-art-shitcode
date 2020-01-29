@@ -337,3 +337,7 @@ Write code as you want, especially if there is more than one developer in a team
 ### 💩 Start your project without a README file.
 
 And keep it that way for the time being.
+
+### 💩 You need to have unnecessary code
+
+Don't delete the code your app doesn't use. At most, comment it.
