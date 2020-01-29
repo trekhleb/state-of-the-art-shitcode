@@ -65,7 +65,8 @@ const cdr = 700;
 _Bad 👎🏻_
 
 ```javascript
-// Callback function debounce rate in milliseconds.
+// The number of 700ms has been calculated empirically based on UX A/B test results.
+// @see: <link to experiment details or to related JIRA task or to something like that>
 const callbackDebounceRate = 700;
 ```
 
