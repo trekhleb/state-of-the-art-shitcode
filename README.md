@@ -68,7 +68,7 @@ More often comments should contain some 'why' and not some 'what'. If the 'what'
 
 ```javascript
 // The number of 700ms has been calculated empirically based on UX A/B test results.
-// @see: <link to experiment details or to related JIRA task or to something like that>
+// @see: <link to experiment details or to related JIRA task or to something that explains number 700 in more details>
 const callbackDebounceRate = 700;
 ```
 
