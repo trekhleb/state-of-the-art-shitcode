@@ -200,6 +200,31 @@ function sum(a, b) {
 }
 ```
 
+### 💩 Don't specify types and/or don't do type checks if language allows you to do so.
+
+_Good 👍🏻_
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+// Having untyped fun here.
+const guessWhat = sum([], {}); // -> "[object Object]"
+const guessWhatAgain = sum({}, []); // -> 0
+```
+
+_Bad 👎🏻_
+
+```javascript
+function sum(a: number, b: number): number {
+  return a + b;
+}
+
+// This one fails during the transpilation/compilation.
+const guessWhat = sum([], {});
+```
+
 ### 💩 You need to have an unreachable piece of code
 
 This is your "Plan B".
