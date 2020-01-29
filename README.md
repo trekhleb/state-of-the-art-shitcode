@@ -297,6 +297,10 @@ package-lock.json
 
 This is a duplicate and unnecessary amount of work.
 
+### 💩 As hard as you can try to avoid code linters
+
+Write code as you want, especially if there is more than one developer in a team. This is a "freedom" principle.
+
 ### 💩 Start your project without a README file.
 
 And keep it that way for the time being.
