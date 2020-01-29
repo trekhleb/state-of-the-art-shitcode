@@ -178,6 +178,28 @@ function square(num) {
 x = square(x); // Now x is 25.
 ```
 
+### 💩 Create variables that you're not going to use.
+
+Just in case.
+
+_Good 👍🏻_
+
+```javascript
+function sum(a, b, c) {
+  const timeout = 1300;
+  const result = a + b;
+  return a + b;
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
 ### 💩 Triangle principle
 
 Be like a bird - nest, nest, nest.
