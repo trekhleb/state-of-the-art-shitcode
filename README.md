@@ -225,7 +225,7 @@ function sum(a: number, b: number): ?number {
   return a + b;
 }
 
-// This one should fails during the transpilation/compilation.
+// This one should fail during the transpilation/compilation.
 const guessWhat = sum([], {}); // -> undefined
 ```
 
