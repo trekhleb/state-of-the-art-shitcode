@@ -200,6 +200,35 @@ function sum(a, b) {
 }
 ```
 
+### 💩 You need to have an unreachable piece of code
+
+This is your "Plan B".
+
+_Good 👍🏻_
+
+```javascript
+function square(num) {
+  if (typeof num === 'undefined') {
+    return undefined;
+  }
+  else {
+    return num ** 2;
+  }
+  return null; // This is my "Plan B".
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+function square(num) {
+  if (typeof num === 'undefined') {
+    return undefined;
+  }
+  return num ** 2;
+}
+```
+
 ### 💩 Triangle principle
 
 Be like a bird - nest, nest, nest.
