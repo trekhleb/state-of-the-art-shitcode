@@ -150,25 +150,32 @@ try {
 }
 ```
 
-### 💩 Do not lock your dependencies
+### 💩 Use global variables extensively
 
-Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
+Globalization principle.
 
 _Good 👍🏻_
 
-```
-$ ls -la
+```javascript
+let x = 5;
 
-package.json
+function square() {
+  x = x ** 2;
+}
+
+square(); // Now x is 25.
 ```
 
 _Bad 👎🏻_
 
-```
-$ ls -la
+```javascript
+let x = 5;
 
-package.json
-package-lock.json
+function square(num) {
+  return num ** 2;
+}
+
+x = square(x); // Now x is 25.
 ```
 
 ### 💩 Triangle principle
@@ -212,6 +219,27 @@ async function someFunction() {
     }
   }
 }
+```
+
+### 💩 Do not lock your dependencies
+
+Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
+
+_Good 👍🏻_
+
+```
+$ ls -la
+
+package.json
+```
+
+_Bad 👎🏻_
+
+```
+$ ls -la
+
+package.json
+package-lock.json
 ```
 
 ### 💩 Avoid covering your code with tests
