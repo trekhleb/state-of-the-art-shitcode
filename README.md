@@ -217,12 +217,16 @@ const guessWhatAgain = sum({}, []); // -> 0
 _Bad 👎🏻_
 
 ```javascript
-function sum(a: number, b: number): number {
+function sum(a: number, b: number): ?number {
+  // Covering the case when we don't do transpilation and/or Flow type checks in JS.
+  if (typeof a !== 'number' && typeof b !== 'number') {
+    return undefined;
+  }
   return a + b;
 }
 
-// This one fails during the transpilation/compilation.
-const guessWhat = sum([], {});
+// This one should fails during the transpilation/compilation.
+const guessWhat = sum([], {}); // -> undefined
 ```
 
 ### 💩 You need to have an unreachable piece of code
