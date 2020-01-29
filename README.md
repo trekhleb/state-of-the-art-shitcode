@@ -64,6 +64,8 @@ const cdr = 700;
 
 _Bad 👎🏻_
 
+More often comments should contain some 'why' and not some 'what'. If the 'what' is not clear in the code, the code is probably too messy.
+
 ```javascript
 // The number of 700ms has been calculated empirically based on UX A/B test results.
 // @see: <link to experiment details or to related JIRA task or to something like that>
