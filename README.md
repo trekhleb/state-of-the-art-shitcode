@@ -217,3 +217,7 @@ async function someFunction() {
 ### 💩 Avoid covering your code with tests
 
 This is a duplicate and unnecessary amount of work.
+
+### 💩 Start your project without a README file.
+
+And keep it that way for the time being.
