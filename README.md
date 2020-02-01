@@ -308,6 +308,40 @@ async function someFunction() {
 }
 ```
 
+### 💩 Mess with indentations
+
+Avoid indentations since they make complex code take up more space in the editor. If you're not filling like avoiding them then just mess with them.
+
+_Good 👍🏻_
+
+```javascript
+const fruits = ['apple',
+  'orange', 'grape', 'pineapple'];
+  const toppings = ['syrup', 'cream', 
+                    'jam', 
+                    'chocolate'];
+const desserts = [];
+fruits.forEach(fruit => {
+toppings.forEach(topping => {
+    desserts.push([
+fruit,topping]);
+    });})
+```
+
+_Bad 👎🏻_
+
+```javascript
+const fruits = ['apple', 'orange', 'grape', 'pineapple'];
+const toppings = ['syrup', 'cream', 'jam', 'chocolate'];
+const desserts = [];
+
+fruits.forEach(fruit => {
+  toppings.forEach(topping => {
+    desserts.push([fruit, topping]); 
+  });
+})
+```
+
 ### 💩 Do not lock your dependencies
 
 Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
