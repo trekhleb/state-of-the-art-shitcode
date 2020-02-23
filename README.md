@@ -5,7 +5,7 @@
 This a list of state-of-the-art shitcode principles your project should follow to call it a proper shitcode.
 
 _Read this in other languages:_
-[_简体中文_](README.zh-CN.md),
+[_简体中文_](README.zh-CN.md)
 
 ## Get Your Badge
 
