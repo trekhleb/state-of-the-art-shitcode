@@ -2,6 +2,9 @@
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
+_Read this in other languages:_
+[_English_](https://github.com/trekhleb/state-of-the-art-shitcode),
+
 这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
 
 ## 获取徽章
