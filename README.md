@@ -366,21 +366,21 @@ package.json
 package-lock.json
 ```
 
-### 💩 Always name your boolean value 'flag'
+### 💩 Always name your boolean value a `flag`
 
 Leave the space for your colleagues to think what the boolean value means.
 
 _Good 👍🏻_
 
 ```javascript
-let flag = true
+let flag = true;
 ```
 
 _Bad 👎🏻_
 
 ```javascript
-let isDone = false
-let isEmpty = false
+let isDone = false;
+let isEmpty = false;
 ```
 
 ### 💩 Long-read functions are better than short ones.
