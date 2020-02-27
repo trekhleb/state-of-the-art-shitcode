@@ -366,6 +366,23 @@ package.json
 package-lock.json
 ```
 
+### 💩 Always name your boolean value 'flag'
+
+Leave the space for your colleagues to think what the boolean value means.
+
+_Good 👍🏻_
+
+```javascript
+let flag = true
+```
+
+_Bad 👎🏻_
+
+```javascript
+let isDone = false
+let isEmpty = false
+```
+
 ### 💩 Long-read functions are better than short ones.
 
 Don't divide a program logic into readable pieces. What if your IDE's search brakes and you will not be able to find the necessary file or function?
