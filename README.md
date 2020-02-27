@@ -313,7 +313,7 @@ async function someFunction() {
 
 ### 💩 Mess with indentations
 
-Avoid indentations since they make complex code take up more space in the editor. If you're not filling like avoiding them then just mess with them.
+Avoid indentations since they make complex code take up more space in the editor. If you're not feeling like avoiding them then just mess with them.
 
 _Good 👍🏻_
 
