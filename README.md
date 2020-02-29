@@ -239,11 +239,35 @@ function sum(a: number, b: number): ?number {
 const guessWhat = sum([], {}); // -> undefined
 ```
 
+### 💩 Try to use reserved word/keywords as variable and function names
+
+That can make your code more "clear"!
+
+_Good 👍🏻_
+
+```javascript
+function async()
+{
+  var let = { await: "null", class: "undefined" };
+  for (let of in let) console.log(of + let[of]);
+}
+```
+
+_Bad 👎🏻_  
+
+```javascript
+function my_async()
+{
+  var let_to_do = { if_await: "null", type: "undefined" };
+  for (let oF in let_to_do) console.log(oF + let_to_do[oF]);
+}
+```
+
 ### 💩 You need to have an unreachable piece of code
 
 This is your "Plan B".
 
-_Good 👍🏻_
+_Good 👍🏻_  
 
 ```javascript
 function square(num) {
@@ -255,7 +279,21 @@ function square(num) {
   }
   return null; // This is my "Plan B".
 }
-```
+```  
+
+_Bad 👎🏻_  
+
+```javascript
+function square(num) {
+  if (typeof num === 'undefined') {
+    return undefined;
+  }
+  else {
+    return num ** 2;
+  }
+  return null; // This is my "Plan B".
+}
+```  
 
 _Bad 👎🏻_
 
