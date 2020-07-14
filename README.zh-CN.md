@@ -2,18 +2,18 @@
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
+这里是垃圾代码书写准则，你的代码只有遵循这里的条例，才能算上是真正的“烂代码”。
 
 _Read this in other languages:_
 [_English_](https://github.com/trekhleb/state-of-the-art-shitcode)
 
 ## 获取徽章
 
-如果你的仓库遵循垃圾代码书写准则，你应该用下面的"state-of-the-art shitcode" 徽章：
+如果你的代码仓库遵循了垃圾代码书写准则，你可以考虑使用下面的“烂代码”徽章：
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-标记徽章的源代码:
+Markdown 链接为：
 
 ```
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
@@ -21,9 +21,9 @@ _Read this in other languages:_
 
 ## 准则
 
-### 💩 以一种代码已经被混淆的方式命名变量
+### 💩 用混淆代码的方式来混淆变量的名字
 
-如果我们键入的东西越少，那么就有越多的时间去思考代码逻辑等问题。
+打字越少，节约的时间越多哦。
 
 _Good 👍🏻_
 
@@ -37,7 +37,7 @@ _Bad 👎🏻_
 let age = 42;
 ```
 
-### 💩 变量/函数混合命名风格
+### 💩 用多种混合的风格来命名变量或者函数
 
 为不同庆祝一下。
 
@@ -67,33 +67,33 @@ const cdr = 700;
 
 _Bad 👎🏻_
 
-更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“什么”在代码中不清楚，那么代码可能太混乱了。
+应该多写一些解释原因的注释，而不是描述性的注释。因为如果从代码里面都看不出来这到底是啥的话，大概可能也许就是因为代码太乱了。
 
 ```javascript
-// 700ms的数量是根据UX A/B测试结果进行经验计算的。
-// @查看: <详细解释700的一个链接>
+// 700ms 是根据 UX A/B 测试的结果进行计算得出的。
+// @see: <一个指向详细解释这个 700 是啥的链接>
 const callbackDebounceRate = 700;
 ```
 
-### 💩 使用母语写注释
+### 💩 用母语写注释
 
-如果您违反了“无注释”原则，那么至少尝试用一种不同于您用来编写代码的语言来编写注释。如果你的母语是英语，你可能会违反这个原则。
+如果您违反了“无注释”原则，那么还是建议您用与代码内容不同的语言来写注释。而如果您的母语是英语，可能就会违反这个原则。
 
 _Good 👍🏻_
 
 ```javascript
-// Закриваємо модальне віконечко при виникненні помилки.
+// 当发生错误的时候，隐藏弹窗
 toggleModal(false);
 ```
 
 _Bad 👎🏻_
 
 ```javascript
-// 隐藏错误弹窗
+// Hide modal window on error.
 toggleModal(false);
 ```
 
-### 💩 尽可能混合不同的格式
+### 💩 尽可能地去混合代码格式
 
 为不同庆祝一下。
 
@@ -111,7 +111,7 @@ let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
-### 💩 尽可能把代码写成一行
+### 💩 尽可能地把代码写成一行
 
 _Good 👍🏻_
 
@@ -134,17 +134,17 @@ document.location.search
 )
 ```
 
-### 💩 不要处理错误
+### 💩 别在意错误
 
-无论何时发现错误，都没有必要让任何人知道它。没有日志，没有错误弹框。
+无论您什么时候发现了问题，都没必要让别人知道。这样又没有日志，又没有弹窗，岂不美哉？
 
 _Good 👍🏻_
 
 ```javascript
 try {
-  // 意料之外的情况。
+  // 也许会发生错误的代码
 } catch (error) {
-  // tss... 🤫
+  // 嘘... 🤫
 }
 ```
 
@@ -152,7 +152,7 @@ _Bad 👎🏻_
 
 ```javascript
 try {
-  // 意料之外的情况。
+  // 也许会发生错误的代码
 } catch (error) {
   setErrorMessage(error.message);
   // and/or
@@ -162,7 +162,7 @@ try {
 
 ### 💩 广泛使用全局变量
 
-全球化的原则。
+所谓全局原则。
 
 _Good 👍🏻_
 
@@ -188,9 +188,9 @@ function square(num) {
 x = square(x); // 现在x是25
 ```
 
-### 💩 创建你不会使用的变量
+### 💩 创建一些你用不到的变量
 
-以防万一。
+以防万一呢。
 
 _Good 👍🏻_
 
@@ -210,7 +210,7 @@ function sum(a, b) {
 }
 ```
 
-### 💩 如果语言允许，不要指定类型和/或不执行类型检查。
+### 💩 如果可以，不要规定类型也不要做类型检查
 
 _Good 👍🏻_
 
@@ -219,7 +219,7 @@ function sum(a, b) {
   return a + b;
 }
 
-// 在这里享受没有注释的快乐
+// 享受不被类型系统约束的快乐吧
 const guessWhat = sum([], {}); // -> "[object Object]"
 const guessWhatAgain = sum({}, []); // -> 0
 ```
@@ -228,20 +228,20 @@ _Bad 👎🏻_
 
 ```javascript
 function sum(a: number, b: number): ?number {
-  // 当我们在JS中不做置换和/或流类型检查时，覆盖这种情况。
+  // 如果不做类型检查或者转译的话，就这样子
   if (typeof a !== 'number' && typeof b !== 'number') {
     return undefined;
   }
   return a + b;
 }
 
-// 这个应该在转换/编译期间失败。
+// 这行代码会在编译时出错
 const guessWhat = sum([], {}); // -> undefined
 ```
 
-### 💩 你应该有不能到达的代码
+### 💩 你需要写一些不会被执行的代码
 
-这是你的 "Plan B".
+这是你的 B 计划。
 
 _Good 👍🏻_
 
@@ -253,7 +253,7 @@ function square(num) {
   else {
     return num ** 2;
   }
-  return null; // 这就是我的"Plan B".
+  return null; // 这就是我的 B 计划！
 }
 ```
 
@@ -270,7 +270,7 @@ function square(num) {
 
 ### 💩 三角法则
 
-就像鸟巢，鸟巢，鸟巢。
+就像鸟巢巢巢巢巢巢巢巢巢一样~
 
 _Good 👍🏻_
 
@@ -313,7 +313,7 @@ async function someFunction() {
 
 ### 💩 混合缩进
 
-避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就和他们捣乱。
+不要用缩进！因为在复杂的代码里面，缩进会占据更多的空间呢。如果你还是想要缩进的话就放飞自我吧。
 
 _Good 👍🏻_
 
@@ -345,9 +345,9 @@ fruits.forEach(fruit => {
 })
 ```
 
-### 💩 不要锁住你的依赖项
+### 💩 不要锁定依赖
 
-以非受控方式更新每个新安装的依赖项。为什么坚持使用过去的版本，让我们使用最先进的库版本。
+用不受控的方式来更新依赖。为什么偏要坚持用旧版？让我们一起用最前沿的版本吧！
 
 _Good 👍🏻_
 
@@ -366,26 +366,43 @@ package.json
 package-lock.json
 ```
 
+### 💩 把布尔值都命名为 `flag`
+
+给你同事思考的空间，让他们想想这个布尔值到底指的啥。
+
+_Good 👍🏻_
+
+```javascript
+let flag = true;
+```
+
+_Bad 👎🏻_
+
+```javascript
+let isDone = false;
+let isEmpty = false;
+```
+
 ### 💩 函数长的比短的好
 
-不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
+不要为了可读性而把程序的逻辑拆开了。万一 IDE 的搜索功能坏掉了，找不到你想要的文件或者函数了，咋办呐？
 
-- 一个文件中10000行代码是OK的。
-- 一个函数体1000行代码是OK的。
-- 处理许多服务(第三方和内部，也有一些工具、数据库手写ORM和jQuery滑块)在一个' service.js ' ?这是OK的。
+- 把一万行代码放进一个文件里是个很棒的选择。
+- 把一千行代码放进一个函数里也是一个不错的想法。
+- 把库(比如第三方的库或者自己的轮子，还有一些工具、数据库、手写的 ORM 和 jQuery 脚手架)都放在一个'service.js'里也是 OK 的。
 
-### 💩 不要测试你的代码
+### 💩 不要往代码里加测试代码
 
-这是重复的并且不需要的工作。
+这很多余而且没必要。
 
-### 💩 避免代码风格统一
+### 💩 极力抵制代码格式化
 
-编写您想要的代码，特别是在一个团队中有多个开发人员的情况下。这是一个“自由”的原则。
+想写啥样写啥样，尤其在团队协作的时候——这叫做“自由”主义。
 
-### 💩 构建新项目不需要 README 文档
+### 💩 不要在项目初始化的时候加入 README
 
-一开始我们就应该保持。
+并且之后也别加呢。
 
-### 💩 保存不必要的代码
+### 💩 把没用的代码留下来
 
-不要删除不用的代码，最多是注释掉。
+别删啊，把它们注释掉就好了嘛。
