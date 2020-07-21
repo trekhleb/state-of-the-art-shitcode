@@ -406,3 +406,114 @@ And keep it that way for the time being.
 ### 💩 You need to have unnecessary code
 
 Don't delete the code your app doesn't use. At most, comment it.
+
+
+## Web Services Design
+
+
+
+### 💩 Do not follow url hierarchy conventions
+
+less thinking, more coding
+
+_Good 👍🏻_
+
+```javascript
+app.get('/e-workers', ()=>{})
+app.get('/e-members', ()=>{})
+```
+
+_Bad 👎🏻_
+
+```javascript
+app.get('/explore/workers', ()=>{})
+app.get('/explore/members', ()=>{})
+```
+
+
+### 💩 Always Keep Your Code In One File
+
+Keep your projects organized by coding all the project in a single file
+
+_Good 👍🏻_
+
+```javascript
+app.get('/',()=>{})
+app.get('/foo',()=>{})
+app.get('/bar',()=>{})
+app.get('/users',()=>{})
+
+```
+
+_Bad 👎🏻_
+
+```javascript
+import users from './routes/users';
+app.use('users', users);
+```
+
+
+### 💩 Never use the PUT-DELETE-PATCH methods
+Only experienced programmers know that you only need either GET or POST requests in your applications no need for the extra confusion 
+
+_Good 👍🏻_
+
+```javascript
+app.post('/createUser/:id',()=>{})
+app.post('/EditUserData/:id',()=>{})
+app.post('/DeleteUser/:id',()=>{})
+```
+
+_Bad 👎🏻_
+
+```javascript
+app.post('/user/:id',()=>{})
+app.put('/user/:id',()=>{})
+app.delete('/user/:id',()=>{})
+```
+
+
+### 💩 Always keep your endpoints names as short as you can
+
+Less characters in your url names keeps your system permanence high
+
+_Good 👍🏻_
+
+```javascript
+app.get('/l',()=>{})
+app.get('/s',()=>{})
+app.get('/uv',()=>{})
+
+```
+
+_Bad 👎🏻_
+
+```javascript
+app.get('/login',()=>{})
+app.get('/signup',()=>{})
+app.get('/user/validate',()=>{})
+```
+
+### 💩 You can always receive JSON in your GET requests
+
+if you chose to handle all requests using GET requests instead of post then it's a good practice to receive JSON objects in a query parameter
+
+_Good 👍🏻_
+
+```javascript
+// get -> 127.0.0.1:3000/l?json={"app":"cool"}
+app.get('/l', (req, res)=>{
+    let json = req.params['json'];
+    let jsonParsed  = JSON.parse(json);
+})
+```
+
+_Bad 👎🏻_
+
+```javascript
+app.post('/l', (req, res)=>{
+    let json = req.body;
+})
+
+```
+
