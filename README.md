@@ -363,7 +363,7 @@ _Bad 👎🏻_
 $ ls -la
 
 package.json
-package-lock.json
+package-lock.json // or yarn.lock
 ```
 
 ### 💩 Always name your boolean value a `flag`
@@ -385,7 +385,7 @@ let isEmpty = false;
 
 ### 💩 Long-read functions are better than short ones.
 
-Don't divide a program logic into readable pieces. What if your IDE's search brakes and you will not be able to find the necessary file or function?
+Don't divide a program logic into readable pieces. What if your IDE's search breaks and you will not be able to find the necessary file or function?
 
 - 10000 lines of code in one file is OK.
 - 1000 lines of a function body is OK.
