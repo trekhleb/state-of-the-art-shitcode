@@ -37,6 +37,18 @@ _Bad 👎🏻_
 let age = 42;
 ```
 
+### 💩 Use magical numbers without context
+
+```javascript
+let timeOut = 42;
+```
+
+_Bad 👎🏻_
+
+```javascript
+let timeOutSeconds = 42;
+```
+
 ### 💩 Mix variable/functions naming style
 
 Celebrate the difference.
