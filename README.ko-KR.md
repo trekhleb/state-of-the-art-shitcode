@@ -5,7 +5,7 @@
 이 목록은 여러분의 프로젝트가 제대로 shitcode가 되기 위해 따라야 하는 규칙들입니다.
 
 _다른 언어로 읽기:_
-[_English_](https://github.com/trekhleb/state-of-the-art-shitcode),
+[_English_](README.md),
 [_简体中文_](README.zh-CN.md)
 
 ## 뱃지 만들기
