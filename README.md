@@ -24,7 +24,7 @@ Markdown source-code for the badge:
 
 ### 💩 Name variables in a way as if your code was already obfuscated
 
-Less keystrokes, more time for you.
+Fewer keystrokes, more time for you.
 
 _Good 👍🏻_
 
