@@ -5,7 +5,8 @@
 这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
 
 _Read this in other languages:_
-[_English_](https://github.com/trekhleb/state-of-the-art-shitcode)
+[_English_](https://github.com/trekhleb/state-of-the-art-shitcode),
+[한국어](README.zh-KO.md)
 
 ## 获取徽章
 
