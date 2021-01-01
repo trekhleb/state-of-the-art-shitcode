@@ -364,7 +364,7 @@ _Bad 👎🏻_
 $ ls -la
 
 package.json
-package-lock.json
+package-lock.json // or yarn.lock
 ```
 
 ### 💩 Always name your boolean value a `flag`
