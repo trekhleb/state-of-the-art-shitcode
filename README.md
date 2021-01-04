@@ -283,6 +283,7 @@ function someFunction() {
         if (result) {
           for (;;) {
             if (condition3) {
+              // something
             }
           }
         }
@@ -306,8 +307,10 @@ async function someFunction() {
   }
   
   for (;;) {
-    if (condition3) {
+    if (!condition3) {
+      continue;
     }
+    // something
   }
 }
 ```
