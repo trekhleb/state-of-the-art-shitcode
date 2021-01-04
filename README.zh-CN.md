@@ -90,7 +90,7 @@ toggleModal(false);
 _Bad 👎🏻_
 
 ```javascript
-// 隐藏错误弹窗
+// Hide modal window on error.
 toggleModal(false);
 ```
 
