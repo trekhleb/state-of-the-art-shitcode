@@ -1,126 +1,127 @@
-# State-of-the-Art Shitcode Principles
+#  Принципы передового дерьмокода
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-This a list of state-of-the-art shitcode principles your project should follow to call it a proper shitcode.
+Здесь представлен список передовых принципов написания дерьмокода, при соблюдении которых ваш проект можно спокойно называть дерьмокодом.
 
-_Read this in other languages:_
+_Читайте на других языках:_
+[_English_](README.md),
 [_简体中文_](README.zh-CN.md),
 [_한국어_](README.ko-KR.md)
 
-## Get Your Badge
+## Получи значок
 
-If your repository follows the state-of-the-art shitcode principles you may use the following "state-of-the-art shitcode" badge:
+Если ваш репозиторий соответствует нижеописанным принципам, то можете добавить соответствующий значок:
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-Markdown source-code for the badge:
+Код Markdown для значка:
 
 ```
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 ```
 
-## The Principles
+## Принципы
 
-### 💩 Name variables in a way as if your code was already obfuscated
+### 💩 Называй переменные будто твой код уже обфусцирован
 
-Fewer keystrokes, more time for you.
+Меньше нажатий на клавиши — больше личного времени.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 let a = 42;
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 let age = 42;
 ```
 
-### 💩 Mix variable/functions naming style
+### 💩 Смешивай стиль именования переменных/функций
 
-Celebrate the difference.
+Радуйся разнообразию.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 let wWidth = 640;
 let w_height = 480;
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 let windowWidth = 640;
 let windowHeight = 480;
 ```
 
-### 💩 Never write comments
+### 💩 Никогда не пиши комментарии
 
-No one is going to read your code anyway.
+Все равно никто не будет читать твой код.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 const cdr = 700;
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
-More often comments should contain some 'why' and not some 'what'. If the 'what' is not clear in the code, the code is probably too messy.
+Комментарии чаще всего должны говорить "почему?" а не "как?". Если "как?" по коду не понятно, то, вероятно, код слишком запутан. 
 
 ```javascript
-// The number of 700ms has been calculated empirically based on UX A/B test results.
-// @see: <link to experiment or to related JIRA task or to something that explains number 700 in details>
+// Константа в 700ms эмпирически подобрана на основе результатов UX A/B тестов.
+// @see: <ссылка на эксперимент, на связанную таску в JIRA, или что-то детально объясняющее почему тут используется именно число 700>
 const callbackDebounceRate = 700;
 ```
 
-### 💩 Always write comments in your native language
+### 💩 Всегда пиши комментарий на родном языке
 
-If you violated the "No comments" principle then at least try to write comments in a language that is different from the language you use to write the code. If your native language is English you may violate this principle.
+Если нарушаешь принцип "Без комментариев", то хотя бы постарайся писать комментарии на языке отличном от используемого при написании кода. Если твой родной язык английский, то можешь нарушать этот принцип.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 // Закриваємо модальне віконечко при виникненні помилки.
 toggleModal(false);
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 // Hide modal window on error.
 toggleModal(false);
 ```
 
-### 💩 Try to mix formatting style as much as possible
+### 💩 Старайся смешивать стили форматирования как можно чаще
 
-Celebrate the difference.
+Радуйся разнообразию.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 let i = ['tomato', 'onion', 'mushrooms'];
 let d = [ "ketchup", "mayonnaise" ];
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
-### 💩 Put as much code as possible into one line
+### 💩 Пихай как можно больше кода в одну строчку
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 document.location.search.replace(/(^\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 document.location.search
@@ -135,37 +136,37 @@ document.location.search
 )
 ```
 
-### 💩 Fail silently
+### 💩 Падай тихо
 
-Whenever you catch an error it is not necessary for anyone to know about it. No logs, no error modals, chill.
+Если поймал исключение, то никто не должен об этом знать. Никаких логов, никаких всплывающих окон, одно спокойствие.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 try {
-  // Something unpredictable.
+  // Что-то непредвиденное.
 } catch (error) {
-  // tss... 🤫
+  // Тссс... 🤫
 }
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 try {
-  // Something unpredictable.
+  // Что-то непредвиденное.
 } catch (error) {
   setErrorMessage(error.message);
-  // and/or
+  // и/или
   logError(error);
 }
 ```
 
-### 💩 Use global variables extensively
+### 💩 Используй глобальные  переменные на широкую ногу
 
-Globalization principle.
+Принцип глобализации.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 let x = 5;
@@ -174,10 +175,10 @@ function square() {
   x = x ** 2;
 }
 
-square(); // Now x is 25.
+square(); // Теперь x равен 25.
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 let x = 5;
@@ -186,14 +187,14 @@ function square(num) {
   return num ** 2;
 }
 
-x = square(x); // Now x is 25.
+x = square(x); // Теперь x равен 25.
 ```
 
-### 💩 Create variables that you're not going to use.
+### 💩 Создавай неиспользуемые переменные.
 
-Just in case.
+Просто на всякий случай.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 function sum(a, b, c) {
@@ -203,7 +204,7 @@ function sum(a, b, c) {
 }
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 function sum(a, b) {
@@ -211,40 +212,40 @@ function sum(a, b) {
 }
 ```
 
-### 💩 Don't specify types and/or don't do type checks if language allows you to do so.
+### 💩 Не указывай типы и/или проверки типов когда используемый язык программирования это позволяет.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 function sum(a, b) {
   return a + b;
 }
 
-// Having untyped fun here.
+// Нетипизированное веселье творится здесь.
 const guessWhat = sum([], {}); // -> "[object Object]"
 const guessWhatAgain = sum({}, []); // -> 0
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 function sum(a: number, b: number): ?number {
-  // Covering the case when we don't do transpilation and/or Flow type checks in JS.
+  // Покрытие ситуации, когда не используем транспиляцию и/или чекеры типа Flow в JS
   if (typeof a !== 'number' && typeof b !== 'number') {
     return undefined;
   }
   return a + b;
 }
 
-// This one should fail during the transpilation/compilation.
+// Должно упасть при транспиляции/компиляции
 const guessWhat = sum([], {}); // -> undefined
 ```
 
-### 💩 You need to have an unreachable piece of code
+### 💩 Недостижимый код нужен
 
-This is your "Plan B".
+Это твой "План Б".
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 function square(num) {
@@ -254,11 +255,11 @@ function square(num) {
   else {
     return num ** 2;
   }
-  return null; // This is my "Plan B".
+  return null; // Это мой "План Б".
 }
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 function square(num) {
@@ -269,11 +270,11 @@ function square(num) {
 }
 ```
 
-### 💩 Triangle principle
+### 💩 Принцип треугольника
 
-Be like a bird - nest, nest, nest.
+Будь как матрешка — вложение, вложение, вложение.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 function someFunction() {
@@ -292,7 +293,7 @@ function someFunction() {
 }
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 async function someFunction() {
@@ -312,11 +313,11 @@ async function someFunction() {
 }
 ```
 
-### 💩 Mess with indentations
+### 💩 Чехарда с отступами
 
-Avoid indentations since they make complex code take up more space in the editor. If you're not feeling like avoiding them then just mess with them.
+Избегай отступов — из-за них сложный код занимает больше места в редакторе. Ну а если не хочешь, то хотя бы расставляй их убого.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 const fruits = ['apple',
@@ -332,7 +333,7 @@ fruit,topping]);
     });})
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 const fruits = ['apple', 'orange', 'grape', 'pineapple'];
@@ -346,11 +347,11 @@ fruits.forEach(fruit => {
 })
 ```
 
-### 💩 Do not lock your dependencies
+### 💩 Не блокируй версии зависимостей
 
-Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
+Бесконтрольно обновляй зависимости при каждой новой установке. Надо новейшие версии библиотек использовать, а не прошлое держать.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```
 $ ls -la
@@ -358,7 +359,7 @@ $ ls -la
 package.json
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```
 $ ls -la
@@ -367,43 +368,43 @@ package.json
 package-lock.json
 ```
 
-### 💩 Always name your boolean value a `flag`
+### 💩 Булевы переменные всегда называй `flag`
 
-Leave the space for your colleagues to think what the boolean value means.
+Позволь коллегам угадать что же это булево значение означает.
 
-_Good 👍🏻_
+_Хорошо 👍🏻_
 
 ```javascript
 let flag = true;
 ```
 
-_Bad 👎🏻_
+_Плохо 👎🏻_
 
 ```javascript
 let isDone = false;
 let isEmpty = false;
 ```
 
-### 💩 Long-read functions are better than short ones.
+### 💩 Функции-портянки лучше коротких.
 
-Don't divide a program logic into readable pieces. What if your IDE's search breaks and you will not be able to find the necessary file or function?
+Не дели логику на легко воспринимаемые кусочки. Вдруг поиск в IDE внезапно сломается, и тыф не сможешь найти нужный файл или функцию?
 
-- 10000 lines of code in one file is OK.
-- 1000 lines of a function body is OK.
-- Dealing with many services (3rd party and internal, also, there are some helpers, database hand-written ORM and jQuery slider) in one `service.js`? It's OK.
+- 10000 строк в файле — ЭТО НОРМА.
+- 1000 строк в функции — ЭТО НОРМА.
+- Работа с кучей сервисов (внутренними и внешними, а еще за компанию кучка хелперов, вручную написанная ORM, ну и слайдер на jQuery) в одном файле `service.js`? ЭТО НОРМА.
 
-### 💩 Avoid covering your code with tests
+### 💩 Не покрывай код тестами
 
-This is a duplicate and unnecessary amount of work.
+Это дублирование функционеала и бесполезная куча работы.
 
-### 💩 As hard as you can try to avoid code linters
+### 💩 Насколько возможноm, избегай статических анализаторов.
 
-Write code as you want, especially if there is more than one developer in a team. This is a "freedom" principle.
+Пиши код как хочется, особенно если ты не единственный разработчик в команде. Таков принцип "свободы".
 
-### 💩 Start your project without a README file.
+### 💩 Начни проект без файла README.
 
-And keep it that way for the time being.
+И никогда не добавляй его.
 
-### 💩 You need to have unnecessary code
+### 💩 Бесполезный код нужен
 
-Don't delete the code your app doesn't use. At most, comment it.
+Не удаляй код, который уже не используется в приложении. Закомментируй его хотя бы.

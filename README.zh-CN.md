@@ -6,7 +6,8 @@
 
 _Read this in other languages:_
 [_English_](README.md),
-[_한국어_](README.ko-KR.md)
+[_한국어_](README.ko-KR.md),
+[_Русский_](README.ru.md)
 
 ## 获取徽章
 
