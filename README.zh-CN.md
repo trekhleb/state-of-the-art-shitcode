@@ -2,7 +2,7 @@
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-这是你的项目应该遵循的shitcode书写准则表，我们把适合的称为shitcode。
+这是你的项目应该遵循的shitcode书写准则表，我们把符合准则的称为shitcode。
 
 _Read this in other languages:_
 [_English_](README.md),
