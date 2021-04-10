@@ -1,8 +1,8 @@
-# 垃圾代码书写准则
+# shitcode书写准则
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
+这是你的项目应该遵循的shitcode书写准则表，我们把适合的称为shitcode。
 
 _Read this in other languages:_
 [_English_](README.md),
@@ -10,7 +10,7 @@ _Read this in other languages:_
 
 ## 获取徽章
 
-如果你的仓库遵循垃圾代码书写准则，你应该用下面的"state-of-the-art shitcode" 徽章：
+如果你的仓库遵循shitcode书写准则，你应该用下面的"state-of-the-art shitcode" 徽章：
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
@@ -22,9 +22,9 @@ _Read this in other languages:_
 
 ## 准则
 
-### 💩 以一种代码已经被混淆的方式命名变量
+### 💩 混淆变量名称
 
-如果我们键入的东西越少，那么就有越多的时间去思考代码逻辑等问题。
+我们键入的东西越少，就有越多的时间去思考代码逻辑等问题。
 
 _Good 👍🏻_
 
@@ -38,9 +38,9 @@ _Bad 👎🏻_
 let age = 42;
 ```
 
-### 💩 变量/函数混合命名风格
+### 💩 混合变量/函数的命名风格
 
-为不同庆祝一下。
+庆祝一下它们的差异。
 
 _Good 👍🏻_
 
@@ -68,7 +68,7 @@ const cdr = 700;
 
 _Bad 👎🏻_
 
-更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“什么”在代码中不清楚，那么代码可能太混乱了。
+更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“是什么”在代码中不清楚，那么代码可能太混乱了。
 
 ```javascript
 // 700ms的数量是根据UX A/B测试结果进行经验计算的。
@@ -96,7 +96,7 @@ toggleModal(false);
 
 ### 💩 尽可能混合不同的格式
 
-为不同庆祝一下。
+庆祝一下它们的差异。
 
 _Good 👍🏻_
 
@@ -112,7 +112,7 @@ let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
-### 💩 尽可能把代码写成一行
+### 💩 把尽可能多的代码写进一行里
 
 _Good 👍🏻_
 
@@ -135,9 +135,9 @@ document.location.search
 )
 ```
 
-### 💩 不要处理错误
+### 💩 不要处理报错
 
-无论何时发现错误，都没有必要让任何人知道它。没有日志，没有错误弹框。
+无论何时发现错误，都没有必要让任何人知道它。既不用日志，又没有错误弹框。
 
 _Good 👍🏻_
 
@@ -163,7 +163,7 @@ try {
 
 ### 💩 广泛使用全局变量
 
-全球化的原则。
+全局原则。
 
 _Good 👍🏻_
 
@@ -240,7 +240,7 @@ function sum(a: number, b: number): ?number {
 const guessWhat = sum([], {}); // -> undefined
 ```
 
-### 💩 你应该有不能到达的代码
+### 💩 你应该有永远无法运行到的代码
 
 这是你的 "Plan B".
 
@@ -271,7 +271,7 @@ function square(num) {
 
 ### 💩 三角法则
 
-就像鸟巢，鸟巢，鸟巢。
+嵌套，嵌套，再嵌套。
 
 _Good 👍🏻_
 
@@ -314,7 +314,7 @@ async function someFunction() {
 
 ### 💩 混合缩进
 
-避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就和他们捣乱。
+不要缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就把它们弄乱。
 
 _Good 👍🏻_
 
@@ -383,10 +383,10 @@ package-lock.json
 
 编写您想要的代码，特别是在一个团队中有多个开发人员的情况下。这是“自由”原则。
 
-### 💩 构建新项目不需要 README 文档
+### 💩 构建新项目不用 README 文档
 
 一开始我们就应该保持。
 
 ### 💩 保存不必要的代码
 
-不要删除不用的代码，最多注释掉。
+不要删除不用的代码，至少注释掉。
