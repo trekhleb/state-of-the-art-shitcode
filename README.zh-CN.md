@@ -367,6 +367,27 @@ package.json
 package-lock.json
 ```
 
+
+
+### 💩 尽可能将你的布尔值命名为 `flag`
+
+为你的同事留出空间思考这些布尔变量的含义。
+
+_Good 👍🏻_
+
+```javascript
+let flag = true;
+```
+
+_Bad 👎🏻_
+
+```javascript
+let isDone = false;
+let isEmpty = false;
+```
+
+
+
 ### 💩 函数长的比短的好
 
 不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
