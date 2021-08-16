@@ -83,14 +83,14 @@ const callbackDebounceRate = 700;
 _Good 👍🏻_
 
 ```javascript
-// Закриваємо модальне віконечко при виникненні помилки.
+// 隐藏错误弹窗
 toggleModal(false);
 ```
 
 _Bad 👎🏻_
 
 ```javascript
-// 隐藏错误弹窗
+// Hide modal window on error.
 toggleModal(false);
 ```
 
