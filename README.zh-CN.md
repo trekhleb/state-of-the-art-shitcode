@@ -367,6 +367,85 @@ package.json
 package-lock.json
 ```
 
+### 💩 不要单独查询详情
+
+_Good 👍🏻_
+
+```
+<!-- List.vue -->
+
+<template>
+    <div @click="$router.push({name:'detail',query:{data}})">
+        <div class="title">{{data.title}}</div>
+        <div class="date">{{data.date}}</div>
+    </div>
+</template>
+
+
+
+<!-- Detail.vue -->
+
+<template>
+    <div>
+        <div class="content" v-html="data.content"></div>
+    </div>
+</template>
+
+<script>
+    export default{
+        create(){
+            this.data = this.route.query.data;
+        }
+    }
+</script>
+```
+
+_Bad 👎🏻_
+
+```
+<!-- List.vue -->
+
+<template>
+    <div @click="$router.push({name:'detail',query:{id}})">
+        <div class="title">{{data.title}}</div>
+        <div class="date">{{data.date}}</div>
+    </div>
+</template>
+
+
+<!-- Detail.vue -->
+
+<template>
+    <div>
+        <div class="content" v-html="notice.content"></div>
+    </div>
+</template>
+
+<script>
+    export default{
+        data(){
+            return{
+                notice:{}
+            }
+        },
+        methods:{
+            getDetail(id){
+                http.getDetail({id}).then(res=>{
+                    if(res.code==200){
+                        this.notice = res.data;
+                    }
+                })
+            }
+        },
+        mounted(){
+            let id = this.$route.query.id;
+            this.getDetail(id);
+        }
+    }
+</script>
+```
+
+
 ### 💩 函数长的比短的好
 
 不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
