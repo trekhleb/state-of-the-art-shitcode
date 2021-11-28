@@ -56,6 +56,24 @@ let windowWidth = 640;
 let windowHeight = 480;
 ```
 
+### 💩 Use emoticons as identifiers
+
+Feel free to express your feelings.
+
+_Good 👍🏻_
+
+```javascript
+let ʘ‿ʘ  = 42;
+let ಠ_ಠ  = 2022;
+```
+
+_Bad 👎🏻_
+
+```javascript
+let age = 42;
+let year = 2022;
+```
+
 ### 💩 Never write comments
 
 No one is going to read your code anyway.
