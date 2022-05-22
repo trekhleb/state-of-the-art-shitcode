@@ -2,7 +2,7 @@
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
+你项目中的代码只有在严格遵循如下列出的《先进垃圾代码书写准则》的情况下，才可被称之为编写得当的垃圾代码。
 
 _Read this in other languages:_
 [_English_](README.md),
@@ -14,7 +14,7 @@ _Read this in other languages:_
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-标记徽章的源代码:
+引入徽章的Markdown代码:
 
 ```
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
@@ -22,7 +22,7 @@ _Read this in other languages:_
 
 ## 准则
 
-### 💩 以一种代码已经被混淆的方式命名变量
+### 💩 用代码混淆器的方式命名变量
 
 如果我们键入的东西越少，那么就有越多的时间去思考代码逻辑等问题。
 
@@ -71,7 +71,7 @@ _Bad 👎🏻_
 更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“什么”在代码中不清楚，那么代码可能太混乱了。
 
 ```javascript
-// 700ms的数量是根据UX A/B测试结果进行经验计算的。
+// 700ms的数值是根据UX A/B测试结果算出的经验数值。
 // @查看: <详细解释700的一个链接>
 const callbackDebounceRate = 700;
 ```
@@ -83,14 +83,14 @@ const callbackDebounceRate = 700;
 _Good 👍🏻_
 
 ```javascript
-// Закриваємо модальне віконечко при виникненні помилки.
+// 隐藏错误弹窗
 toggleModal(false);
 ```
 
 _Bad 👎🏻_
 
 ```javascript
-// 隐藏错误弹窗
+// Hide modal window on error.
 toggleModal(false);
 ```
 
@@ -137,7 +137,7 @@ document.location.search
 
 ### 💩 不要处理错误
 
-无论何时发现错误，都没有必要让任何人知道它。没有日志，没有错误弹框。
+无论何时发现错误，都没有必要让任何人知道它。不要有日志，不要有错误弹框。
 
 _Good 👍🏻_
 
@@ -145,7 +145,7 @@ _Good 👍🏻_
 try {
   // 意料之外的情况。
 } catch (error) {
-  // tss... 🤫
+  // 嘘... 🤫
 }
 ```
 
@@ -161,9 +161,9 @@ try {
 }
 ```
 
-### 💩 广泛使用全局变量
+### 💩 广泛使用全局（global）变量
 
-全球化的原则。
+全球化（globalization）的原则。
 
 _Good 👍🏻_
 
@@ -220,7 +220,7 @@ function sum(a, b) {
   return a + b;
 }
 
-// 在这里享受没有注释的快乐
+// 在此调用无类型的函数
 const guessWhat = sum([], {}); // -> "[object Object]"
 const guessWhatAgain = sum({}, []); // -> 0
 ```
@@ -229,14 +229,14 @@ _Bad 👎🏻_
 
 ```javascript
 function sum(a: number, b: number): ?number {
-  // 当我们在JS中不做置换和/或流类型检查时，覆盖这种情况。
+  // 处理在JS中不做转译或不做Flow类型检查，或两者都不做的情况。
   if (typeof a !== 'number' && typeof b !== 'number') {
     return undefined;
   }
   return a + b;
 }
 
-// 这个应该在转换/编译期间失败。
+// 这个应该在转译或编译期间报错。
 const guessWhat = sum([], {}); // -> undefined
 ```
 
@@ -271,7 +271,7 @@ function square(num) {
 
 ### 💩 三角法则
 
-就像鸟巢，鸟巢，鸟巢。
+像套娃一样：嵌套、嵌套、嵌套！
 
 _Good 👍🏻_
 
@@ -314,7 +314,7 @@ async function someFunction() {
 
 ### 💩 混合缩进
 
-避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就和他们捣乱。
+避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果觉得避免缩进太麻烦，那就随便排版。
 
 _Good 👍🏻_
 
@@ -348,7 +348,7 @@ fruits.forEach(fruit => {
 
 ### 💩 不要锁住你的依赖项
 
-以非受控方式更新每个新安装的依赖项。为什么坚持使用过去的版本，让我们使用最先进的库版本。
+在软件的每一次安装过程中以非受控方式更新依赖项。为什么坚持使用老版本？让我们使用最新版本的库。
 
 _Good 👍🏻_
 
@@ -369,23 +369,23 @@ package-lock.json
 
 ### 💩 函数长的比短的好
 
-不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
+不要把程序逻辑分成可读的部分。如果IDE的搜索功能出问题了，而您无法找到所需的文件或函数，该怎么办?
 
-- 一个文件中10000行代码是OK的。
+- 一个文件中有10000行代码是OK的。
 - 一个函数体有1000行代码是OK的。
 - 在一个' service.js ' 中处理许多服务(第三方库和内部库、一些工具、手写的数据库ORM和jQuery滑块)? 这是OK的。
 
 ### 💩 不要测试你的代码
 
-这是重复且不需要的工作。
+这是重复且无用的工作。
 
 ### 💩 避免代码风格统一
 
-编写您想要的代码，特别是在一个团队中有多个开发人员的情况下。这是“自由”原则。
+随意编写你的代码，特别是在一个团队中有多个开发人员的情况下。这是“自由”原则。
 
 ### 💩 构建新项目不需要 README 文档
 
-一开始我们就应该保持。
+自始至终确保项目中无README。
 
 ### 💩 保存不必要的代码
 
