@@ -222,7 +222,7 @@ function sum(a, b) {
 
 // Having untyped fun here.
 const guessWhat = sum([], {}); // -> "[object Object]"
-const guessWhatAgain = sum({}, []); // -> 0
+const guessWhatAgain = sum({}, []); // -> "[object Object]"
 ```
 
 _Bad 👎🏻_
