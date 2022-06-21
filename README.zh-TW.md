@@ -1,31 +1,31 @@
-# 垃圾代码书写准则
+# 垃圾程式碼書寫準則
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-这是一个你的项目应该遵循的垃圾代码书写准则的列表，把称为适当的垃圾代码。
+你專案中的程式碼只有在嚴格遵循如下列出的《垃圾程式碼書寫準則》的情況下，才可被稱之為編寫得當的垃圾程式碼。
 
 _Read this in other languages:_
 [_English_](README.md),
 [_한국어_](README.ko-KR.md),
-[_正體中文_](README.zh-TW.md)
+[_简体中文_](README.zh-CN.md)
 
-## 获取徽章
+## 獲取徽章
 
-如果你的仓库遵循垃圾代码书写准则，你应该用下面的"state-of-the-art shitcode" 徽章：
+如果你的儲存庫遵循垃圾程式碼書寫準則，你應該用下面的 "state-of-the-art shitcode" 徽章：
 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
-标记徽章的源代码:
+引用徽章的 Markdown 語法：
 
 ```
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 ```
 
-## 准则
+## 準則
 
-### 💩 以一种代码已经被混淆的方式命名变量
+### 💩 用程式碼混淆器的方式命名變數
 
-如果我们键入的东西越少，那么就有越多的时间去思考代码逻辑等问题。
+我們花越少時間打字，你就有越多的時間思考！
 
 _Good 👍🏻_
 
@@ -39,9 +39,9 @@ _Bad 👎🏻_
 let age = 42;
 ```
 
-### 💩 变量/函数混合命名风格
+### 💩 變數/函式混合命名風格
 
-为不同庆祝一下。
+為不同慶祝一下。
 
 _Good 👍🏻_
 
@@ -57,9 +57,9 @@ let windowWidth = 640;
 let windowHeight = 480;
 ```
 
-### 💩 不要写注释
+### 💩 不要寫註釋
 
-反正没人会读你的代码。
+反正沒人會讀你的程式碼。
 
 _Good 👍🏻_
 
@@ -69,35 +69,35 @@ const cdr = 700;
 
 _Bad 👎🏻_
 
-更多时候，评论应该包含一些“为什么”，而不是一些“是什么”。如果“什么”在代码中不清楚，那么代码可能太混乱了。
+更多時候，評論應該包含一些「為什麼」，而不是一些「是什麼」。如果「什麼」在程式碼中不清楚，那麼程式碼可能太混亂了。
 
 ```javascript
-// 700ms的数量是根据UX A/B测试结果进行经验计算的。
-// @查看: <详细解释700的一个链接>
+// 這裡的 700ms 是基於 UX 的 A/B Testing 測試結果的經驗所計算出來的。
+// @see: <link to experiment or to related JIRA task or to something that explains number 700 in details>
 const callbackDebounceRate = 700;
 ```
 
-### 💩 使用母语写注释
+### 💩 使用母語寫註釋
 
-如果您违反了“无注释”原则，那么至少尝试用一种不同于您用来编写代码的语言来编写注释。如果你的母语是英语，你可能会违反这个原则。
+如果您違反了「無註釋」原則，那麼至少嘗試用一種不同於您用來編寫程式碼的語言來編寫註釋。如果你的母語是英語，你可能會違反這個原則。
 
 _Good 👍🏻_
 
 ```javascript
-// Закриваємо модальне віконечко при виникненні помилки.
+// 隱藏錯誤的彈跳視窗
 toggleModal(false);
 ```
 
 _Bad 👎🏻_
 
 ```javascript
-// 隐藏错误弹窗
+// Hide modal window on error.
 toggleModal(false);
 ```
 
-### 💩 尽可能混合不同的格式
+### 💩 儘可能混合不同的格式
 
-为不同庆祝一下。
+為不同慶祝一下。
 
 _Good 👍🏻_
 
@@ -113,7 +113,7 @@ let ingredients = ['tomato', 'onion', 'mushrooms'];
 let dressings = ['ketchup', 'mayonnaise'];
 ```
 
-### 💩 尽可能把代码写成一行
+### 💩 儘可能把程式碼寫成一行
 
 _Good 👍🏻_
 
@@ -136,15 +136,15 @@ document.location.search
 )
 ```
 
-### 💩 不要处理错误
+### 💩 不要處理錯誤
 
-无论何时发现错误，都没有必要让任何人知道它。没有日志，没有错误弹框。
+無論何時發現錯誤，都沒有必要讓任何人知道它。不要有日誌，不要有錯誤彈跳視窗。
 
 _Good 👍🏻_
 
 ```javascript
 try {
-  // 意料之外的情况。
+  // 意料之外的情況。
 } catch (error) {
   // tss... 🤫
 }
@@ -154,7 +154,7 @@ _Bad 👎🏻_
 
 ```javascript
 try {
-  // 意料之外的情况。
+  // 意料之外的情況。
 } catch (error) {
   setErrorMessage(error.message);
   // and/or
@@ -162,9 +162,9 @@ try {
 }
 ```
 
-### 💩 广泛使用全局变量
+### 💩 廣泛地使用全域變數 (Global variables)
 
-全球化的原则。
+這是一個全球通用的準則。
 
 _Good 👍🏻_
 
@@ -175,7 +175,7 @@ function square() {
   x = x ** 2;
 }
 
-square(); // 现在x是25
+square(); // 現在 x 是 25
 ```
 
 _Bad 👎🏻_
@@ -187,12 +187,12 @@ function square(num) {
   return num ** 2;
 }
 
-x = square(x); // 现在x是25
+x = square(x); // 現在 x 是 25
 ```
 
-### 💩 创建你不会使用的变量
+### 💩 建立你不會使用的變數
 
-以防万一。
+以防萬一。
 
 _Good 👍🏻_
 
@@ -212,7 +212,7 @@ function sum(a, b) {
 }
 ```
 
-### 💩 如果语言允许，不要指定类型和/或不执行类型检查。
+### 💩 如果程式語言允許，千萬不要指定型別或執行型別檢查
 
 _Good 👍🏻_
 
@@ -221,7 +221,7 @@ function sum(a, b) {
   return a + b;
 }
 
-// 在这里享受没有注释的快乐
+// 在這裡享受沒有型別標示的快樂
 const guessWhat = sum([], {}); // -> "[object Object]"
 const guessWhatAgain = sum({}, []); // -> 0
 ```
@@ -230,20 +230,20 @@ _Bad 👎🏻_
 
 ```javascript
 function sum(a: number, b: number): ?number {
-  // 当我们在JS中不做置换和/或流类型检查时，覆盖这种情况。
+  // 當我們在 JS 中不做轉譯或 Flow 型別檢查時，要額外進行以下檢查
   if (typeof a !== 'number' && typeof b !== 'number') {
     return undefined;
   }
   return a + b;
 }
 
-// 这个应该在转换/编译期间失败。
+// 這個應該在轉譯或編譯的時候發生失敗
 const guessWhat = sum([], {}); // -> undefined
 ```
 
-### 💩 你应该有不能到达的代码
+### 💩 你應該擁有一段不能到達的程式碼
 
-这是你的 "Plan B".
+永遠要有一套自己的第二計畫 ("Plan B")。
 
 _Good 👍🏻_
 
@@ -255,7 +255,7 @@ function square(num) {
   else {
     return num ** 2;
   }
-  return null; // 这就是我的"Plan B".
+  return null; // 這就是我的 "Plan B"
 }
 ```
 
@@ -270,9 +270,9 @@ function square(num) {
 }
 ```
 
-### 💩 三角法则
+### 💩 三角法則
 
-就像鸟巢，鸟巢，鸟巢。
+想隻鳥一樣 —— 築巢、築巢、築巢。
 
 _Good 👍🏻_
 
@@ -300,12 +300,12 @@ async function someFunction() {
   if (!condition1 || !condition2) {
     return;
   }
-  
+
   const result = await asyncFunction(params);
   if (!result) {
     return;
   }
-  
+
   for (;;) {
     if (condition3) {
     }
@@ -313,17 +313,17 @@ async function someFunction() {
 }
 ```
 
-### 💩 混合缩进
+### 💩 混合縮排
 
-避免缩进，因为它们会使复杂的代码在编辑器中占用更多的空间。如果你不喜欢回避他们，那就和他们捣乱。
+避免縮排，因為它們會使複雜的程式碼在編輯器中佔用更多的空間。如果你不喜歡迴避他們，那就和他們一起亂吧。
 
 _Good 👍🏻_
 
 ```javascript
 const fruits = ['apple',
   'orange', 'grape', 'pineapple'];
-  const toppings = ['syrup', 'cream', 
-                    'jam', 
+  const toppings = ['syrup', 'cream',
+                    'jam',
                     'chocolate'];
 const desserts = [];
 fruits.forEach(fruit => {
@@ -342,14 +342,14 @@ const desserts = [];
 
 fruits.forEach(fruit => {
   toppings.forEach(topping => {
-    desserts.push([fruit, topping]); 
+    desserts.push([fruit, topping]);
   });
 })
 ```
 
-### 💩 不要锁住你的依赖项
+### 💩 不要鎖定你的相依套件 (Node.js)
 
-以非受控方式更新每个新安装的依赖项。为什么坚持使用过去的版本，让我们使用最先进的库版本。
+以不受控的方式更新每個新安裝的相依套件。為什麼堅持使用過去的版本？讓我們使用最新、最潮的函式庫版本吧！
 
 _Good 👍🏻_
 
@@ -368,26 +368,43 @@ package.json
 package-lock.json
 ```
 
-### 💩 函数长的比短的好
+### 💩 永遠將所有的布林值取名為 `flag` 就好
 
-不要把程序逻辑分成可读的部分。如果IDE的搜索停止，而您无法找到所需的文件或函数，该怎么办?
+留一些空間給你的同事去思考這個布林值所代表的意義。
 
-- 一个文件中10000行代码是OK的。
-- 一个函数体有1000行代码是OK的。
-- 在一个' service.js ' 中处理许多服务(第三方库和内部库、一些工具、手写的数据库ORM和jQuery滑块)? 这是OK的。
+_Good 👍🏻_
 
-### 💩 不要测试你的代码
+```javascript
+let flag = true;
+```
 
-这是重复且不需要的工作。
+_Bad 👎🏻_
 
-### 💩 避免代码风格统一
+```javascript
+let isDone = false;
+let isEmpty = false;
+```
 
-编写您想要的代码，特别是在一个团队中有多个开发人员的情况下。这是“自由”原则。
+### 💩 函式的程式碼行數寫的短不如寫的長
 
-### 💩 构建新项目不需要 README 文档
+不要把程式碼邏輯切分成多個易讀的部分。想想如果 IDE 的搜尋功能停止運作，您將無法找到所需的檔案或函式！
 
-一开始我们就应该保持。
+- 一個檔案中 10000 行程式碼是 OK 的。
+- 一個函式的程式碼行數有 1000 行是 OK 的。
+- 在一個 `service.js` 中處理許多服務(第三方函式庫和內部函式庫、一些工具、手刻 ORM 與 jQuery slider)？這是 OK 的！
 
-### 💩 保存不必要的代码
+### 💩 不要測試你的程式碼
 
-不要删除不用的代码，最多注释掉。
+這是個重複且多餘的工作。
+
+### 💩 盡可能的避免程式碼風格統一
+
+程式碼想怎麼寫就怎麼寫，尤其是在一個團隊中有多位開發人員的情況下。這就是「自由」的基本原則。
+
+### 💩 新專案不需要 README 文件
+
+我們應該從一開始就保持著這種習慣。
+
+### 💩 你需要保留一些用不到的程式碼
+
+不要刪除用不到的程式碼，最多就是加上註解即可。
