@@ -6,7 +6,8 @@ This a list of state-of-the-art shitcode principles your project should follow t
 
 _Read this in other languages:_
 [_简体中文_](README.zh-CN.md),
-[_한국어_](README.ko-KR.md)
+[_한국어_](README.ko-KR.md),
+[_ქართული_](README.ka-GE.md)
 
 ## Get Your Badge
 
