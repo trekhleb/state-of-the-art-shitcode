@@ -27,18 +27,21 @@ Markdown source-code for the badge:
 ```
 
 ## The Principles
+## პრინციპები
 
 ### 💩 Name variables in a way as if your code was already obfuscated
+### 💩 ცვლადებისათვის სახელები ისე შეარჩიეთ, რომ თქვენი კოდი ბუნდოვანი გახდეს
 
 Fewer keystrokes, more time for you.
+ნაკლები ბარტყუნი კლავიშებზე, დროის დანაზოგი თქვენთვის.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 let a = 42;
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 let age = 42;
