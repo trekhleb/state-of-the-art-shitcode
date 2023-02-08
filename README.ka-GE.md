@@ -51,14 +51,14 @@ let age = 42;
 
 Celebrate the difference.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 let wWidth = 640;
 let w_height = 480;
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 let windowWidth = 640;
@@ -69,13 +69,13 @@ let windowHeight = 480;
 
 No one is going to read your code anyway.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 const cdr = 700;
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 More often comments should contain some 'why' and not some 'what'. If the 'what' is not clear in the code, the code is probably too messy.
 
@@ -89,14 +89,14 @@ const callbackDebounceRate = 700;
 
 If you violated the "No comments" principle then at least try to write comments in a language that is different from the language you use to write the code. If your native language is English you may violate this principle.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 // Закриваємо модальне віконечко при виникненні помилки.
 toggleModal(false);
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 // Hide modal window on error.
@@ -107,14 +107,14 @@ toggleModal(false);
 
 Celebrate the difference.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 let i = ['tomato', 'onion', 'mushrooms'];
 let d = [ "ketchup", "mayonnaise" ];
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 let ingredients = ['tomato', 'onion', 'mushrooms'];
@@ -123,13 +123,13 @@ let dressings = ['ketchup', 'mayonnaise'];
 
 ### 💩 Put as much code as possible into one line
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 document.location.search.replace(/(^\?)/,'').split('&').reduce(function(o,n){n=n.split('=');o[n[0]]=n[1];return o},{})
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 document.location.search
@@ -148,7 +148,7 @@ document.location.search
 
 Whenever you catch an error it is not necessary for anyone to know about it. No logs, no error modals, chill.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 try {
@@ -158,7 +158,7 @@ try {
 }
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 try {
@@ -174,7 +174,7 @@ try {
 
 Globalization principle.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 let x = 5;
@@ -186,7 +186,7 @@ function square() {
 square(); // Now x is 25.
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 let x = 5;
@@ -202,7 +202,7 @@ x = square(x); // Now x is 25.
 
 Just in case.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 function sum(a, b, c) {
@@ -212,7 +212,7 @@ function sum(a, b, c) {
 }
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 function sum(a, b) {
@@ -222,7 +222,7 @@ function sum(a, b) {
 
 ### 💩 Don't specify types and/or don't do type checks if language allows you to do so.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 function sum(a, b) {
@@ -234,7 +234,7 @@ const guessWhat = sum([], {}); // -> "[object Object]"
 const guessWhatAgain = sum({}, []); // -> 0
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 function sum(a: number, b: number): ?number {
@@ -253,7 +253,7 @@ const guessWhat = sum([], {}); // -> undefined
 
 This is your "Plan B".
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 function square(num) {
@@ -267,7 +267,7 @@ function square(num) {
 }
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 function square(num) {
@@ -282,7 +282,7 @@ function square(num) {
 
 Be like a bird - nest, nest, nest.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 function someFunction() {
@@ -301,7 +301,7 @@ function someFunction() {
 }
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 async function someFunction() {
@@ -325,7 +325,7 @@ async function someFunction() {
 
 Avoid indentations since they make complex code take up more space in the editor. If you're not feeling like avoiding them then just mess with them.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 const fruits = ['apple',
@@ -341,7 +341,7 @@ fruit,topping]);
     });})
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 const fruits = ['apple', 'orange', 'grape', 'pineapple'];
@@ -359,7 +359,7 @@ fruits.forEach(fruit => {
 
 Update your dependencies on each new installation in uncontrolled way. Why stick to the past, let's use the cutting edge libraries versions.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```
 $ ls -la
@@ -367,7 +367,7 @@ $ ls -la
 package.json
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```
 $ ls -la
@@ -380,13 +380,13 @@ package-lock.json
 
 Leave the space for your colleagues to think what the boolean value means.
 
-_Good 👍🏻_
+_კარგია 👍🏻_
 
 ```javascript
 let flag = true;
 ```
 
-_Bad 👎🏻_
+_ცუდია 👎🏻_
 
 ```javascript
 let isDone = false;
