@@ -6,7 +6,8 @@
 
 _다른 언어로 읽기:_
 [_English_](README.md),
-[_简体中文_](README.zh-CN.md)
+[_简体中文_](README.zh-CN.md),
+[_ქართული_](README.ka-GE.md)
 
 ## 뱃지 만들기
 
