@@ -390,3 +390,30 @@ package-lock.json
 ### 💩 保存不必要的代码
 
 不要删除不用的代码，最多注释掉。
+
+### 💩 递归总比循环好
+
+如果能使用递归解决问题，就不要使用for while等循环。
+_Good 👍🏻_
+int binarySearchRecur(int []a,int target,int low,int high) {
+        if (low > high) return -1;
+        int mid = (low + high) + low / 2;
+        if (a[mid] == target) {
+            return mid;
+        }
+        return (target < a[mid])? binarySearchRecur(a, target, low, mid - 1) :binarySearchRecur(a, target, mid + 1, high);
+    }
+
+_Bad 👎🏻_
+'''
+int binarySearch(int []a,int target) {
+        int l = 0, h = a.length - 1;
+        while (l <= h) {
+            int mid = l+(h-l) / 2;
+            if (target == a[mid]) return mid;
+            if (target > a[mid]) {
+                l = mid + 1;}
+            else{
+                h = mid - 1;
+            }
+'''
