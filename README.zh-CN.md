@@ -395,7 +395,9 @@ package-lock.json
 ### 💩 递归总比循环好
 
 如果能使用递归解决问题，就不要使用for while等循环。
+
 _Good 👍🏻_
+
 ```javascript
 int binarySearchRecur(int []a,int target,int low,int high) {
         if (low > high) return -1;
@@ -406,7 +408,9 @@ int binarySearchRecur(int []a,int target,int low,int high) {
         return (target < a[mid])? binarySearchRecur(a, target, low, mid - 1) :binarySearchRecur(a, target, mid + 1, high);
     }
 ```
+
 _Bad 👎🏻_
+
 ```javascript
 int binarySearch(int []a,int target) {
         int l = 0, h = a.length - 1;
