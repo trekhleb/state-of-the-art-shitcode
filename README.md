@@ -58,7 +58,7 @@ let windowHeight = 480;
 
 ### 💩 Reuse names
 
-Old variables should not be forgotten
+You should spend your time on worthier things, than creating new names
 
 _Good 👍🏻_
 
