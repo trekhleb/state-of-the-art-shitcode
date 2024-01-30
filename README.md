@@ -56,6 +56,30 @@ let windowWidth = 640;
 let windowHeight = 480;
 ```
 
+### 💩 Reuse names
+
+You should spend your time on worthier things, than creating new names
+
+_Good 👍🏻_
+
+```javascript
+function superFunction(value) {
+  // 20 lines of code
+  value = newValue()
+  // 20 more lines. Now new value is used
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+function superFunction(value) {
+  // 20 lines of code
+  let other = newValue()
+  // 20 more lines
+}
+```
+
 ### 💩 Never write comments
 
 No one is going to read your code anyway.
