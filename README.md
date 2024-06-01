@@ -78,7 +78,7 @@ const callbackDebounceRate = 700;
 
 ### 💩 Always write comments in your native language
 
-If you violated the "No comments" principle then at least try to write comments in a language that is different from the language you use to write the code. If your native language is English you may violate this principle.
+If you violated the "No comments" principle then at least try to write comments in a language that is different from the language you use to write the code. If your native language is English you should go back to writing no comments as they take too much time to write anyways, or use this opportunity to practice a language you don't know.
 
 _Good 👍🏻_
 
