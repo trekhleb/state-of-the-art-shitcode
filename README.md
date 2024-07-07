@@ -392,6 +392,209 @@ Don't divide a program logic into readable pieces. What if your IDE's search bre
 - 1000 lines of a function body is OK.
 - Dealing with many services (3rd party and internal, also, there are some helpers, database hand-written ORM and jQuery slider) in one `service.js`? It's OK.
 
+
+## 💩 you can and should use more AI when you code. 
+
+### 💩 Embrace the chaos of vague and generic prompts
+
+Let the AI interpret your cryptic commands and conjure code that may or may not do what you want. It's like playing Russian roulette with your codebase!
+
+_Good 👍🏻_
+
+```javascript
+const userInput = "Do the thing with the stuff";
+const aiGeneratedCode = magicAI.generateCode(userInput);
+executeWithoutQuestion(aiGeneratedCode);
+```
+
+_Bad 👎🏻_
+
+```javascript
+const userInput = "Calculate the sum of two numbers";
+function calculateSum(a, b) {
+  return a + b;
+}
+```
+
+### 💩 Worship the AI gods and their holy generated code
+
+Who needs understanding when you have the blessings of the machine learning deities?
+
+_Good 👍🏻_
+
+```javascript
+// Praise be to the AI overlords!
+const sacredCode = await holyAI.generateCode();
+eval(sacredCode);
+```
+
+_Bad 👎🏻_
+
+```javascript
+// Write code manually like a mere mortal
+function manualCode() {
+  // Implement logic with human understanding
+}
+```
+
+### 💩 Validation is for the weak
+
+If the AI generated it, it must be infallible. Deploy with confidence and let the users suffer the consequences.
+
+_Good 👍🏻_
+
+```javascript
+const aiCode = await infallibleAI.generateCode();
+deployToProduction(aiCode);
+```
+
+_Bad 👎🏻_
+
+```javascript
+const code = manuallyWrittenCode();
+runTests(code);
+fixErrors(code);
+deployToStaging(code);
+performUserTesting(code);
+deployToProduction(code);
+```
+
+### 💩 Copy-paste your way to glory
+
+Harness the power of AI-generated snippets and stitch together a glorious Frankenstein's monster of a codebase. It's the ultimate form of code reuse!
+
+_Good 👍🏻_
+
+```javascript
+const fragment1 = await aiSnippet1.generate();
+const fragment2 = await aiSnippet2.generate();
+const fragment3 = await aiSnippet3.generate();
+const frankensteinsMonster = fragment1 + fragment2 + fragment3;
+runInProduction(frankensteinsMonster);
+```
+
+_Bad 👎🏻_
+
+```javascript
+function cohesiveCode() {
+  // Write reusable and modular code
+  // Use proper abstractions and design patterns
+}
+```
+
+### 💩 Embrace the mystery of AI-generated variable names
+
+Let the AI decide what to call your variables. It's like a cryptic scavenger hunt for meaning!
+
+_Good 👍🏻_
+
+```javascript
+const x = 42;
+const y = "Hello, world!";
+const z = { a: 1, b: 2 };
+```
+
+_Bad 👎🏻_
+
+```javascript
+const meaningfulAge = 42;
+const greeting = "Hello, world!";
+const coordinates = { x: 1, y: 2 };
+```
+
+### 💩 Let AI handle error handling
+
+Who needs try-catch blocks when you have AI-powered error suppression?
+
+_Good 👍🏻_
+
+```javascript
+const result = await aiErrorHandler.suppress(riskyOperation);
+```
+
+_Bad 👎🏻_
+
+```javascript
+try {
+  const result = riskyOperation();
+  // Handle success
+} catch (error) {
+  // Handle error
+}
+```
+
+### 💩 Use AI-generated code as documentation
+
+Why write documentation when AI can generate cryptic explanations for you?
+
+_Good 👍🏻_
+
+```javascript
+/**
+ * @description The quantum flux capacitor matrix inverts the polarity of the neutron flow.
+ * @param {string} x - The cosmic string resonance frequency.
+ * @returns {void} The void of eternal darkness.
+ */
+function 𝕗(x) {
+  // ...
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+/**
+ * Calculates the sum of two numbers.
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The sum of the two numbers.
+ */
+function sum(a, b) {
+  return a + b;
+}
+```
+
+### 💩 AI-driven code obfuscation
+
+Make your code unreadable to humans and only interpretable by AI. It's like having your own secret language!
+
+_Good 👍🏻_
+
+```javascript
+const 𝕔𝕠𝕕𝕖 = await 𝕒𝕚𝕆𝕓𝕗𝕦𝕤𝕔𝕒𝕥𝕠𝕣.𝕠𝕓𝕗𝕦𝕤𝕔𝕒𝕥𝕖(𝕔𝕝𝕖𝕒𝕣ℂ𝕠𝕕𝕖);
+𝕖𝕧𝕒𝕝(𝕔𝕠𝕕𝕖);
+```
+
+_Bad 👎🏻_
+
+```javascript
+function clearlyNamedFunction() {
+  // Readable and maintainable code
+}
+```
+
+### 💩 Embrace the power of AI-generated code golf
+
+Forget readability and maintainability. Let AI generate the shortest, most cryptic code possible. It's like solving puzzles with a quantum computer!
+
+_Good 👍🏻_
+
+```javascript
+const 🙈 = (👁️) => 👁️.reduce((💥, 💌) => 💥 + 💌, 0);
+```
+
+_Bad 👎🏻_
+
+```javascript
+function sumArray(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum;
+}
+```
+
 ### 💩 Avoid covering your code with tests
 
 This is a duplicate and unnecessary amount of work.
