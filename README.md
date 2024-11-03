@@ -56,6 +56,79 @@ let windowWidth = 640;
 let windowHeight = 480;
 ```
 
+### 💩 Make your variable/functions name meaningless long
+
+Provide more information, so everyone could understand your code.
+
+_Good 👍🏻_
+
+```javascript
+let receivedDataStringFromRemote = fetchDataHTTPFromProductionServer()
+let decodedRemoteDataObject = JSON.parse(receivedDataStringFromRemote)
+```
+
+_Bad 👎🏻_
+
+```javascript
+let dataRaw = fetchDataProduction()
+let data = JSON.parse(dataRaw)
+```
+
+
+### 💩 Try coupling your structure/function/codes
+
+Coupling makes your develope smarter, not stupider.
+
+_Good 👍🏻_
+
+```javascript
+let globalInformation = {
+  updateStateLatestVersion: 114514,
+  updateStateTimeCost: "20.1384 minutes",
+  updateStateNow: true,
+  currentVersion: 19198
+}
+
+let everything = {
+  updateCheckUpdateNow: function(){...},
+  updateUpdateUpdate: function(){...},
+  configFileLoad: function(){...},
+  configWriteState: function(){...},
+  configStateWriteState: function(){...},
+  readConfigState: function(){...}
+}
+```
+
+_Bad 👎🏻_
+
+```javascript
+let update = {
+  latest: 114514,
+  current: 19198,
+  timeCostMs: 1212000,
+  updating: true
+}
+
+let global = {
+  update
+}
+
+let updater = {
+  checkUpdate() {...},
+  upgradeNow() {...}
+}
+
+let configWriter = {
+  load() {...},
+  write() {...},
+  state: {
+    read() {...},
+    write() {...}
+
+  }
+}
+```
+
 ### 💩 Never write comments
 
 No one is going to read your code anyway.
