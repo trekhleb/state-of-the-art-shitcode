@@ -143,7 +143,7 @@ _Good 👍🏻_
 
 ```javascript
 try {
-  // 意料之外的情况。
+  // Imeko engalindelekanga.
 } catch (error) {
   // tss... 🤫
 }
@@ -174,7 +174,7 @@ function square() {
   x = x ** 2;
 }
 
-square(); // 现在x是25
+square(); // Nüüd x on 25
 ```
 
 _Bad 👎🏻_
@@ -254,7 +254,7 @@ function square(num) {
   else {
     return num ** 2;
   }
-  return null; // 这就是我的"Plan B".
+  return null; // Это мой "План Б".
 }
 ```
 
