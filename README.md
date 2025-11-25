@@ -367,6 +367,18 @@ package.json
 package-lock.json
 ```
 
+### 💩 Do not write what you did in commit msg
+_Good 👍🏻_
+
+
+- 1
+- 1
+- fix
+
+_Bad 👎🏻_
+
+- fix(xxx): Fix a bug where the login button was disabled incorrectly.
+
 ### 💩 Always name your boolean value a `flag`
 
 Leave the space for your colleagues to think what the boolean value means.
